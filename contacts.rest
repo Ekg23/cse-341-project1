@@ -3,3 +3,31 @@ GET http://localhost:3000/users
 
 ### Get one contact
 GET http://localhost:3000/users/6a019037b88601945e1e2d1f
+
+
+### Create user
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john@example.com",
+  "favoriteColor": "Blue",
+  "birthday": "1999-01-01"
+}
+
+### Update user
+PUT http://localhost:3000/users/6a0b32fd777f751790d18513
+Content-Type: application/json
+
+{
+  "firstName": "Jane",
+  "lastName": "Doe",
+  "email": "jane@example.com",
+  "favoriteColor": "Red",
+  "birthday": "2000-05-10"
+}
+
+### Delete user
+DELETE http://localhost:3000/users/6a0b327523115ee153705968
